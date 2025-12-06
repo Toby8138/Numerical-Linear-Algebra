@@ -1,3 +1,5 @@
+
+# Cholesky decomposition (A must be positive definite)
 function Cholesky(A)
     m,~ = size(A)
     L = zeros(eltype(A),m,m)
