@@ -1,6 +1,6 @@
 using LinearAlgebra
 
-# a)
+# a) Solving Hx = b, where b = (1,...,1) with a PLU decomposition
 H = [1/(j+k-1) for j in 1:10, k in 1:10] # generate H
 b = ones(10) # b
 
@@ -23,7 +23,7 @@ print("Relative backwards error: ")
 println(b_e)
 
 
-# c)
+# c) Condition of the Hilbert Matrix
 k = cond(Inf, H)
 print("Condition of H: ")
 println(k)
